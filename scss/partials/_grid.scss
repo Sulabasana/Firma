@@ -14,7 +14,7 @@ header, section, footer{	//szerokość tych elementów
 	margin: 0 auto;
 	background-color:#D6CBCF;
 }
-.clearfix::before, .clearfix::after { //magic trick to save// 
+.row::before, .row::after { //magic trick to save// 
 	content: "";
 	display: table;
 	clear: both;

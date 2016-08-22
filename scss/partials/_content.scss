@@ -22,17 +22,23 @@ h1{
    }
 }
 #oferta{
-	.offer{
-	margin-left: 6em;
-	background-color: #C2B280;
-		.coal{
-			display: inline;
-		}
-		.desc{
-			display: none;
+	.row{
+		background-color: #C2B280;
+		.offer{
+			margin-left: 6em;
+			.coal{
+				display: inline;
+
+			}
+			.desc{
+				display: none;
 		
+			}
+			.cost{
+				font-size: 1.5em;
+			}
 		}
-	}	
+	}		
 }
 #kontakt{
 	.col-6{
@@ -54,9 +60,12 @@ h1{
 }
 
 form{
+	label{
+		margin-top: 2em; 
+	}
 	.input{
-		width: 50%;
-		margin-bottom: 1em;
+		width: 20em;
+		margin-bottom: 1.5em;
 		clear: both;
 		margin-left: 4.5em;
 	}
@@ -74,6 +83,10 @@ form{
 	}
 	button{
 		margin-top: 1em;
+	}
+	textarea{
+		width: 20em;
+		height: 5em;
 	}
 }
 

@@ -196,18 +196,27 @@ h1 {
 .slider ul li:nth-child(1) {
   display: block;
 }
-
+#oferta .container{
+  background-color: #C2B280;
+}
 #oferta .offer {
   margin-left: 6em;
-  background-color: #C2B280;
+  
 }
 
 #oferta .offer .coal {
+  float: left;
   display: inline;
 }
 
 #oferta .offer .desc {
   display: none;
+}
+#oferta .offer .coal .cost {
+  display: inline;
+  margin-left: 15em;
+  float:right;
+
 }
 
 #kontakt .col-6 {
@@ -228,6 +237,11 @@ h1 {
   font-size: 1.2em;
 }
 
+.dwa{
+  line-height: 50%;
+  display: inline;
+
+}
 form .input {
   width: 50%;
   margin-bottom: 1em;
