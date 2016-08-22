@@ -1,0 +1,32 @@
+footer{ //ustawienia footera 
+	width: 100%; //szerokośc 100% kontenera
+	height: 10%; //wysokośc 10% kontenera
+	.container{
+		background-color: white;
+
+		img{		//zdjęcie ma być 30 % szerokości i 50% wysokości
+			width: 30%;
+			height: 50%;
+			margin-top: 2em;
+		}ul{
+			margin-top: 1.5em;
+			li{
+				list-style-type: none;
+				padding: 0.5em;
+				font-weight: bold;
+				a{
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+		h4{
+			font-weight: normal;
+			float: right;
+		}
+		.copy{
+			margin-top: 2em;
+		}
+	}	
+	
+}

@@ -1,0 +1,148 @@
+*{ // reset całej strony i ustawiamy borderboxa marginesy padding i czcionke
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', Arial, sans-serif;
+
+}
+header, section, footer{	//szerokość tych elementów
+	width: 100%;
+}
+.container{ // kontener jego szerokość i margines
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color:#D6CBCF;
+}
+.clearfix::before, .clearfix::after { //magic trick to save// 
+	content: "";
+	display: table;
+	clear: both;
+
+}
+[class *='col-'] { 
+	float:left;
+	min-height: 1px;
+}
+
+
+
+$colCount: 12;
+
+@for $i from 1 through $colCount{
+	
+	.col-#{$i} {
+		width: $i/$colCount * 100%;
+	}
+}
+
+header{
+	color:white;
+	nav{
+		.container{
+			
+			.col-3{
+			 
+			}
+		}
+	}
+}
+section{
+	.container{
+		.col-10{
+			text-align:center;
+		}
+	}
+}
+section{
+	.container{
+		.row{
+			.col-3{
+				&:last-child{
+					height: 400px;
+					background-color: aqua;
+				}
+				.row{
+					.col-12{
+						height: 60px;
+						background-color: aqua;
+						margin-bottom: 10px;
+					}
+				}
+			}
+			.col-6{
+				height: 400px;
+				background-color: yellow;
+			}
+		}
+	}
+}
+
+footer{
+	.container{
+		.row{
+			.col-12{
+				height: 300px;
+				background-color: aqua;
+			}
+		}
+	}
+}
+
+
+
+
+// p{
+// 	font-size: $fontSize; // zmienna zdefiniowana w pliku _base.css
+// }
+
+
+// @for $i from 1 to 5{  // elementy h w kolejności
+	
+// 	h#{$i} {	//h i przy użyciu interpolacji
+// 		font-size: (5-$i)*$fontSize;	// czyli 5 - 1 * liczba ze zmiennej potem 5-2 * liczba i tak dalej
+// 	}
+// }
+
+// @include maxWidth($Phone){	// podłącznie mixina zdefiniowanego w pliku_mixin.scss i zmiennej zdefiniowanej w piku _base.scss a w nim media 
+// 	p{
+// 		font-size: $fontSize+2;	//to jest content należący do media zadeklarowany w mixinie. 
+// 	}
+// 	@for $i from 1 to 5{
+	
+// 		h#{$i} {
+// 		font-size: (5-$i)*$fontSize+2;	
+// 		}
+// 	}
+// }
+// @include minWidth($Phone){
+// 	p{
+// 		font-size: $fontSize+6;
+// 	}
+// 	@for $i from 1 to 5{
+	
+// 		h#{$i} {
+// 			font-size: (5-$i)*$fontSize+6;	
+// 		}
+// 	}
+// }
+// @include minWidth($Tablet){
+// 	p{
+// 		font-size: $fontSize+12;
+// 	}
+// 	@for $i from 1 to 5{
+	
+// 		h#{$i} {
+// 		font-size: (5-$i)*$fontSize+12;	
+// 		}
+// 	}
+// }
+
+// @media all and (max-width:640px) and (orientation: portrait) { 
+// 	[class *='col-'] { 
+// 		width: 100%;
+// 	}
+// }
+
+// tablet 1024 font +2  i potem +2
+// phone 768 font najmniejsze

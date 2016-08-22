@@ -1,0 +1,84 @@
+h1{
+	margin: 2em 0 2em 0;
+	text-align:center;
+}
+
+.slider{
+  	// height: 250px;
+  	overflow: hidden;
+    width: 80%;
+    ul{
+  		list-style: none;
+    	margin: 0;
+    	padding: 0;
+    	position: relative;
+    	li{
+        	float: left;	
+        	display: none;
+    	}
+    	li:nth-child(1){
+    		display: block;
+    	}
+   }
+}
+#oferta{
+	.offer{
+	margin-left: 6em;
+	background-color: #C2B280;
+		.coal{
+			display: inline;
+		}
+		.desc{
+			display: none;
+		
+		}
+	}	
+}
+#kontakt{
+	.col-6{
+		margin-top: 2em;
+	}
+	.col-5{
+		margin: 2em 0 0 4em;
+		h3{
+			text-align: center;
+			
+		}
+		p{
+			margin-bottom: 2em;
+			text-align: center;
+			font-size: 1.2em;
+
+		}
+	}
+}
+
+form{
+	.input{
+		width: 50%;
+		margin-bottom: 1em;
+		clear: both;
+		margin-left: 4.5em;
+	}
+	#name{
+		width: 60%;
+		margin-left: 4em;
+	}
+	#surname{
+		width: 60%;
+		margin-left: 4em;
+	}
+	#mail{
+		width: 60%;
+		margin-left: 4em;
+	}
+	button{
+		margin-top: 1em;
+	}
+}
+
+
+
+
+
+
