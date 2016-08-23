@@ -66,58 +66,6 @@ $colCount: 12;
 	}
 } 
 
-header{
-	color:white;
-	nav{
-		.container{
-			
-			.col-3{
-			 
-			}
-		}
-	}
-}
-section{
-	.container{
-		.col-10{
-			text-align:center;
-		}
-	}
-}
-section{
-	.container{
-		.row{
-			.col-3{
-				&:last-child{
-					height: 400px;
-					background-color: aqua;
-				}
-				.row{
-					.col-12{
-						height: 60px;
-						background-color: aqua;
-						margin-bottom: 10px;
-					}
-				}
-			}
-			.col-6{
-				height: 400px;
-				background-color: yellow;
-			}
-		}
-	}
-}
-
-footer{
-	.container{
-		.row{
-			.col-12{
-				height: 300px;
-				background-color: aqua;
-			}
-		}
-	}
-}
 
 
 

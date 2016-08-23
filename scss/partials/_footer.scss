@@ -2,7 +2,7 @@ footer{ //ustawienia footera
 	width: 100%; //szerokośc 100% kontenera
 	height: 10%; //wysokośc 10% kontenera
 	.container{
-		background-color: #C2B280;
+		background-color:#33FF33;
 
 		img{		//zdjęcie ma być 30 % szerokości i 50% wysokości
 			width: 30%;
@@ -26,6 +26,12 @@ footer{ //ustawienia footera
 		}
 		.copy{
 			margin-top: 2em;
+		}
+		.fb{
+			width: 34px;
+			background: url("../images/fb.png") no-repeat right bottom;
+			height: 34px;
+			float: right;
 		}
 	}	
 	
