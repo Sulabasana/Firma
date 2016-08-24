@@ -2,7 +2,7 @@ footer{ //ustawienia footera
 	width: 100%; //szerokośc 100% kontenera
 	height: 10%; //wysokośc 10% kontenera
 	.container{
-		background-color:#33FF33;
+		background-color:#e2e2e2;;//#33FF33;
 
 		img{		//zdjęcie ma być 30 % szerokości i 50% wysokości
 			width: 30%;
@@ -28,11 +28,13 @@ footer{ //ustawienia footera
 			margin-top: 2em;
 		}
 		.fb{
-			width: 34px;
-			background: url("../images/fb.png") no-repeat right bottom;
-			height: 34px;
+			width: 38px;
 			float: right;
-			
+			font-size: 2em;
+			margin: 0 2em 1em 0;
+			&:hover{
+				font-size: 3em;
+			}
 		}
 	}	
 	

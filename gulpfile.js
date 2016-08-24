@@ -18,10 +18,12 @@ gulp.task('inject', ['sass'], function (){
   	var sources = gulp.src(['./js/vendor/jquery-3.1.0.min.js',  './css/style.css'], 
   		{read: false});
 
-var sources2 = gulp.src(['./js/app.js' ], 
+var sources2 = gulp.src(['./js/app.js'], 
+  		{read: false});
+var sources3 = gulp.src(['./font/fontello.css'], 
   		{read: false});
 
-	return target.pipe(inject(series(sources,sources2)))
+	return target.pipe(inject(series(sources,sources2,sources3)))
 	.pipe(gulp.dest('./'));
 
 

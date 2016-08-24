@@ -54,8 +54,11 @@ h2{
 }
 .slider{
   	overflow: hidden;
-    float:left;
-    margin: 0 auto;
+    // float: left;
+    // margin: 0 auto;
+    background: url("../images/wegiel.jpg");
+    background-size: cover;
+    height: 55vh;
     ul{
   		list-style-type: none;
     	margin: 0;
@@ -64,20 +67,14 @@ h2{
     	li{
         	float: left;	
         	display: none;
-        	.nagl{
-        		width:20%;
-        		height: 20vh;
-        		background-color: white; 
         		h2{
-        		position: absolute;
-        		top: 150px;
-        		left:0;
         		width:40%;
+        		margin-top: 4em;
            		}
            		img{
            			opacity: 0.9;
            		}
-           	}
+           	
         	// .mis{
         	// 	visibility:hidden;
         	// 	position: absolute;
@@ -145,8 +142,8 @@ h2{
 	min-width: 220px;
 	height: 100px;
 	z-index: 5;
-	top: 300px;
-    right: 200px;
+	top: 35%;
+    right: 25%;
     position: fixed;
     border-bottom: 10px solid #EA3400;
    	border-radius: 3px;
@@ -154,7 +151,7 @@ h2{
    	background-color: white;
     	.fast_title{
     		font-weight: bold;
-    		color: blue;
+    		color: #0000ff;
     	}
     	.fast_txt{
     		font-weight: bold;
@@ -177,7 +174,7 @@ h2{
 #oferta{
 	.row{
 
-		background: rgba(226,226,226,1);
+		background: #e2e2e2;
 // background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
 // background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(54%, rgba(209,209,209,1)), color-stop(67%, rgba(151,207,151,1)), color-stop(100%, rgba(151,207,151,1)));
 // background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
@@ -230,7 +227,7 @@ h2{
 		margin: 0 0 0 3em;
 		h3{
 			text-align: center;
-			margin-top: 2em;
+			margin: 2em 1em 0 0;
 			text-transform: uppercase;
 		}
 		p{
