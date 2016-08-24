@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
  	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Domat prim s.c.</title>
+	<meta property="og:title" content="Domat prim" />
+	<meta property="og:type" content="Przedsiębiorstwo handlu opałem" />
+	<meta property="og:url" content="http://domatprim.pl" />
+	<meta property="og:image" content="/images/logo.png" />
 	  <!-- inject:css -->
 	  <link rel="stylesheet" href="/css/style.css">
 	  <!-- endinject -->
@@ -28,15 +33,14 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<h1>Witamy na stronie przedsiębiorstwa handlu opałem Domat Prim</h1>
-				<h2>Zapraszmy Państwa do zapoznania się z naszą ofertą. Oferujemy najwyższej jakości węgiel pochodzący wyłacznie z polskich kopaln.</h2>
-				<button id="prev" class="col-lg-1">Button w lewo</button>
+				<div class="wit"><h1>Witamy na stronie przedsiębiorstwa handlu opałem Domat Prim</h1></div>
+				<button id="prev" class="col-lg-1">&lt</button>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 slider">
 					<ul> <!-- płynna animacja/ slider -->
-						<li><img src="http://naukawpolsce.pap.pl/Data/Files/_plugins/information/401312/17062826_11734323.jpg"></li>
-						<li><img src="http://img1.flagma.ru/photo-o02204581_big.jpg?1"></li>
-						<li><img src="http://www.kapost.pl/files/cache/d1397a4a3d0193561b3a3b5a4e79ee91.jpg"></li>
-						<li><img src="http://naukawpolsce.pap.pl/Data/Files/_plugins/information/401312/17062826_11734323.jpg"></li>
+						<li><div class="nagl"><h2>Zapraszmy Państwa do zapoznania się z naszą ofertą. Oferujemy najwyższej jakości węgiel pochodzący wyłacznie z polskich kopalni.</h2></div><img src="http://naukawpolsce.pap.pl/Data/Files/_plugins/information/401312/17062826_11734323.jpg"></li>
+						<li><!-- <h2 class="mis">"A węgiel to koks, to antracyt" - Miś </h2> --><img src="http://img1.flagma.ru/photo-o02204581_big.jpg?1"></li>
+						<li><!-- <h2 class="us">Handlujemy opałem od 40 lat. O węglu wiemy wszysyko.</h2> --><img src="http://www.kapost.pl/files/cache/d1397a4a3d0193561b3a3b5a4e79ee91.jpg"></li>
+						<li><!-- <h2 class="transport">Posiadamy samochody umożliwiające transport węgla na terenie Wrocławia, a takze w jego okolicach</h2> --><img src="http://naukawpolsce.pap.pl/Data/Files/_plugins/information/401312/17062826_11734323.jpg"></li>
 						<li><img src="http://naukawpolsce.pap.pl/Data/Files/_plugins/information/401312/17062826_11734323.jpg"></li>
 
 					</ul>	
@@ -82,13 +86,13 @@
 					<p class="desc">Zajebisty towar</p><br>
 					<h3 class="coal">Węgiel Kostka z kopalni Ziemowit <p class="cost"> 806 zł/t</p></h3>
 					<p class="desc">Kostka</p><br>
-					<h4>Opał workowany + 40zł/T</h4>
+					<h4>Opał workowany + 40zł/t</h4>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 price">
-					<p>Ceny promocyjne dotyczą tylko płatności gótówką przy płatności kartą +1%</p>
-					<p>Powyższy cennik ma jedynie charakter informacyjny i nie stanowi oferty w rozumieniu art. 66 kodeksu cywilnego. Wiążący charakter ma cennik znajdujący się w naszej siedzibie.</p>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+					<p class="price">Ceny promocyjne dotyczą tylko płatności gótówką. Przy płatności kartą +1%</p>
+					<p class="price">Powyższy cennik ma jedynie charakter informacyjny i nie stanowi oferty w rozumieniu art. 66 kodeksu cywilnego. Wiążący charakter ma cennik znajdujący się w naszej siedzibie.</p>
 				</div>
 			</div>
 		</div>
@@ -98,31 +102,35 @@
 			<div class="row">
 				<div class="col-xs-10 col-sm-10 col-md-5 col-lg-5"><h3>KONTAKT</h3><br>
 					<p class="street">Ulica Robotnicza 8C</p> 
-					<p class="number">numer telefonu: +48 71 355 78 67<br>71 885 56 68</p>
+					<p class="number">Numery telefonów:<br> +48 71 355 78 67<br>71 885 56 68</p>
 					<p class="work">Godziny pracy:<br>poniedziałek-piatek 7-15<br>sobota 7-12</p>
 					<p> Jeśli mają Państwo jakieś pytania odnośnie naszych usług prosimy o kontakt telefoniczny lub drogą elektroniczną za pomocą naszego formularza kontaktowego. Serdecznie zapraszamy do osobistego zapoznania się z naszą ofertą w godzinach pracy  naszej firmy.</p>
-					<form name="Kontakt" method="post" action="">
+					<form name="Kontakt" method="POST" action="">
 						<label for="name">Imię </label>
 						<div class="input">
-							<input id="name" type="text" name="name">
+							<input id="name" type="text" name="name" placeholder="Imię">
 						</div>
 						<label for="surname">Nazwisko </label>
 						<div class="input">
-							<input id="surname" type="text" name="surname">
+							<input id="surname" type="text" name="surname" placeholder="Nazwisko">
 						</div>
 						<label for="e-mail">Twój e-mail</label>
 						<div class="input">						
-							<input id="mail" type="mail" name="mail">
+							<input id="mail" type="mail" name="mail" placeholder="e-mail">
+						</div>
+						<label for="subject">Temat</label>
+						<div class="input">						
+							<input id="subject" type="text" name="subjcet" placeholder="temat">
 						</div>
 						<label for="tekst">Twoja wiadomość</label>
-						<textarea></textarea>
+						<textarea name="message"></textarea>
 						<button type="reset">Wyczyść</button>
-						<button type="submit">Wyślij</button>	
+						<input type="submit"></input>	
 					</form>
 				</div>
 			
 				<div class="col-xs-11 col-sm-11 col-md-6 col-lg-6 frame">
-					<h3> Jak do nas dojechać</h3>
+					<h3>Nasza lokalizajca</h3>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.0085592070295!2d17.008815315323762!3d51.108302247626234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc20f679b4c1d%3A0xef19c1f2f2208425!2sRobotnicza+8C%2C+Wroc%C5%82aw%2C+Polska!5e0!3m2!1spl!2sus!4v1471861896141" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen alt="mapa.google"></iframe>
 				</div>
 			</div>

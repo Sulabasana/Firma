@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    var menuElement = $("nav"); 
+    var links = menuElement.find($("a")); 
+      links.on('click', function(){ 
+       var hrefValue = $(this).attr("href");
+       var hrefValueOffset = $(hrefValue).offset(); 
+     $("body, html").animate({"scrollTop": hrefValueOffset.top
+}, 2000); 
+    });
+ 
  var fast = $("#fast");
  var cross = $(".cross");
     cross.on("click", function(){

@@ -177,7 +177,7 @@ h1 {
 }
 
 .slider {
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 80%;
 }
 
@@ -212,13 +212,13 @@ h1 {
 #oferta .offer .desc {
   display: none;
 }
-#oferta .offer .coal .cost {
-  display: inline;
-  margin-left: 15em;
-  float:right;
-
+#oferta .offer .cost {
+  margin-left: 10em;
 }
 
+.hide{
+  display: none;
+}
 #kontakt .col-6 {
   margin-top: 2em;
 }
