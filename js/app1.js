@@ -1,161 +1,51 @@
 $(document).ready(function() {
-
+    var menuElement = $("nav"); 
+    var links = menuElement.find($("a")); 
+      links.on('click', function(){ 
+       var hrefValue = $(this).attr("href");
+       var hrefValueOffset = $(hrefValue).offset(); 
+     $("body, html").animate({"scrollTop": hrefValueOffset.top
+}, 2000); 
+    });
+ 
  var fast = $("#fast");
  var cross = $(".cross");
     cross.on("click", function(){
         fast.hide();
     });
 
-     //tworzę funkcję.......
-    function animateGallery (){
-        var next = $("#next");
-        var prev = $("#prev");
-        var listElements = $("li");
-        var ul = $("ul");
-        var index = 0;
-        var length = listElements.length;
-        var pictureWidth = 600;
-        
-        var cloneFirst = listElem.eq(0).clone();
-        var cloneLast = listElem.eq(length -1).clone();
+var coal = $('.coal');
 
-        cloneFirst.appendTo(ul);
-        cloneLast.prependTo(ul);
-        
-         ul.css({
-            "width": ((length+2) * pictureWidth) + "px",
-            "position": "relative",
-            "left": -pictureWidth+"px"
-        });
-        console.log(length);
-
-        next.on("click", function() {
-             index++;
-              if (index <= length){
-         ul.animate({left: "-=" + pictureWidth + "px"}, 500, function(){
-             if (index === length){
-                 index = 0;
-                 ul.css("left", 0+ "px");
-             }
-             else if (index === length-1){
-                 index = 1;
-                 ul.css("left", -pictureWidth + "px");
-             }
-         });
-         console.log(index);
-        }
-           else {
-               index = 1;
-               ul.animate({left: -(length+1)*pictureWidth + "px"}, 500, function(){
-                   ul.css("left", -400 + "px");
-               });
-           }
-     });
-     
-     prev.on("click", function() {
-         index--;
-         if (index >= 0){
-         ul.animate({left: "+=" + pictureWidth + "px"}, 500, function(){
-             if (index <= 0){
-                 index = length;
-                 ul.css("left", -(length)*pictureWidth + "px");
-             }
-         });
-         console.log(index);
-         }
-         else {
-             index = length -1;
-             ul.animate({left: pictureWidth + "px"}, 500, function(){
-                 ul.css("left", -(length-1)*pictureWidth + "px");
-             });
-             
-         }
-  
-     });
+ coal.on("click", function(){
+    $(this).next().toggle();
+ });
 
 
-    var coal = $(".coal") ;
+   $('.bxslider').bxSlider();
 
-    coal.on("click", function() {
-        $(this).parents("tr").next().slideToggle();
-     return false;
-     });
-    }
-});
-// $(document).ready(function(){
-   
-//         //definiuje zmienne
-//         var next = $("#nextPicture");
-//         var prev = $("#prevPicture");
-//         var listElem = $("li");
-//         var ul = $("ul");
-//         var index = 1;
-//         var pictureWidth = 400;
-        
-//         //definiuje zmienne do klonowania
-//         var cloneFirst = listElem.eq(0).clone();
-//         var cloneLast = listElem.eq(listElem.length -1).clone();
-        
-//         //dolaczam do listy
-//         cloneFirst.appendTo(ul);
-//         cloneLast.prependTo(ul);
-        
-//         //definiuje zmienna okreslajaca dlugosc tablicy
-//         var length = listElem.length;
-        
-//         //ustawiam szerokosc kontenera i pozycje relative
-//         ul.css({
-//             "width": ((length+2) * pictureWidth) + "px",
-//             "position": "relative",
-//             "left": -pictureWidth+"px"
-//         });
-//         console.log(listElem.length);
-//     //event na przycisk next
-//        next.on("click", function() {
-//          index++;
-//         if (index <= length){
-//          ul.animate({left: "-=" + pictureWidth + "px"}, 500, function(){
-//              if (index === length){
-//                  index = 0;
-//                  ul.css("left", 0+ "px");
-//              }
-// //             else if (index === length-1){
-// //                 index = 1;
-// //                 ul.css("left", -pictureWidth + "px");
-// //             }
-//          })
-//          console.log(index);
-//         }
-//            else {
-//                index = 1;
-//                ul.animate({left: -(length+1)*pictureWidth + "px"}, 500, function(){
-//                    ul.css("left", -400 + "px");
-//                });
-//            }
-//      });
-     
-//      prev.on("click", function() {
-//          index--;
-//          if (index >= 0){
-//          ul.animate({left: "+=" + pictureWidth + "px"}, 500, function(){
-//              if (index <= 0){
-//                  index = length;
-//                  ul.css("left", -(length)*pictureWidth + "px");
-//              }
-//          })
-//          console.log(index);
-//          }
-//          else {
-//              index = length -1;
-//              ul.animate({left: pictureWidth + "px"}, 500, function(){
-//                  ul.css("left", -(length-1)*pictureWidth + "px");
-//              })
-             
-//          }
-  
-//      });
-// });
-  
+
+  // function Slider(){
+  //       var slider = $(".slider ul");
+  //       var next = $("#next");
+  //       var prev = $("#prev");
+  //       slider.eq(1).delay(5000).hide("slide", {direction:"left"}, 500);
+  //       var sc = $(".slider img").length;
+  //       var count = 2;
+  //       setInterval(function (){
+  //           slider.eq(1+count).show("slide", {direction:"right"},500);
+  //           slider.eq(1+count).delay(5500).hide("slide",{direction:"left"}, 500);
+  //               if(count == sc){
+  //                   count = 0;
+  //               }else{
+  //                   count +=1;
+  //               }
+  //           },6500);
+  //       console.log(slider.eq(1))
+  //       };
+    
+  //   Slider();
+ // 
 
 
 
+}); 

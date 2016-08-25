@@ -13,7 +13,6 @@ footer
 logo, odnośniki do góry strony i do innych elementów na stronie.
 
 
-2.Sprawdzić jak zrobić te nagłówki (h) z tym dziadostwem co sie zowie p w ofercie.
-3.Fontello zelent
-4. jquery slider
-5. program balsamiq do strony " o mnie zrobić"
+4. jquery slider :< :<
+5. zdjęcia domatu.
+

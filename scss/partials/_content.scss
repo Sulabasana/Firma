@@ -1,6 +1,6 @@
 .row{ 
 	.wit{
-		background-color:#ffffdf;
+		background-color:#ffffef;
 
 		 h1 {
 		margin: 2em 0 2em 0;
@@ -48,96 +48,27 @@
 }
 
 h2{
-	margin: 2em 0 0 0;
 	text-align:center;
-	color: #ffffff; 
+	color: #000000; 
+	// position: relative;
+	// top: 100px;
+	// left:25px;
+	// width: 20%;
 }
-.slider{
-  	overflow: hidden;
-    // float: left;
-    // margin: 0 auto;
-    background: url("../images/wegiel.jpg");
-    background-size: cover;
-    height: 55vh;
-    ul{
-  		list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	position: relative;
-    	li{
-        	float: left;	
-        	display: none;
-        		h2{
-        		width:40%;
-        		margin-top: 4em;
-           		}
-           		img{
-           			opacity: 0.9;
-           		}
-           	
-        	// .mis{
-        	// 	visibility:hidden;
-        	// 	position: absolute;
-        	// 	top:200px;
-        	// 	left:250px;
-        	// 	width: 40%
-        	// }
-        	// .us{
-        	// 	visibility: hidden;
-        	// 	position: absolute;
-        	// 	top: 350px;
-        	// 	left:250px;
-        	// 	width:40%;
-        	// }
-        	// .transport{
-        	// 	position: absolute;
-        	// 	top:400px;
-        	// 	left:0;
-        	// 	width: 30%;
-        	// }
-        	
-    	}
-    	li:nth-child(1){
-    		display: block;
-   		}
-    }
+.bxslider{
+	
 }
-@media screen and (max-width: 767px){
-			#prev{
-				display: none;
-			}
-			#next{
-				display: none;
-			}
-			.slider{
-				ul{
-					li{
-						display: block;
-					}
-				}	
-			}
-}			
-@media screen and (min-width: 768px) and (max-width:1199px){
-	#prev{
-		display: none;
-		}
-	#next{
-		display: none;
-		}
-	.slider{
-		ul{
-			li{
-				display: block;	
-			}
-		}
-		
-	}
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: 0;
+	background: #fff;
+	
 }
-@media screen and (min-width: 1200px){
-	.slider {
-       	display: block;
-   	 }
-}
+
+
 #fast{
 	min-width: 220px;
 	height: 100px;
