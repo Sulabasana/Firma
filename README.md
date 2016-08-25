@@ -14,5 +14,6 @@ logo, odnośniki do góry strony i do innych elementów na stronie.
 
 
 4. jquery slider :< :<
-5. zdjęcia domatu.
+5. nagłówek przygotować o ratach. nagłówek że witamy , o ciężarówkach coś.
+6. zdjęcia domatu.
 

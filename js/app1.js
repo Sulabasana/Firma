@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var menuElement = $("nav"); 
+     var menuElement = $("nav"); 
     var links = menuElement.find($("a")); 
       links.on('click', function(){ 
        var hrefValue = $(this).attr("href");
@@ -22,7 +22,7 @@ var coal = $('.coal');
 
 
    $('.bxslider').bxSlider();
-
+});
 
   // function Slider(){
   //       var slider = $(".slider ul");
@@ -47,5 +47,3 @@ var coal = $('.coal');
  // 
 
 
-
-}); 
