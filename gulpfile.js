@@ -10,23 +10,21 @@ Files = {
 	scss:
 	['./scss/main.scss', './scss/partials/_grid.scss','./scss/modules/_base.scss', './scss/modules/_mixin.scss', './scss/modules/_fonts.scss', './scss/partials/_content.scss', './scss/partials/_header.scss', './scss/partials/_footer.scss'],
 	html: './index.html',
-	js : ['./js/vendor/jquery-3.1.0.min.js','./js/app.js', '.js/jquery.bxslider.js']
+	js : ['./js/vendor/jquery-3.1.0.min.js','./js/app.js', '.js/ajax.js']
 };
 
 gulp.task('inject', ['sass'], function (){
 	var target = gulp.src('./index.html');
-  	var sources = gulp.src(['./js/vendor/jquery-3.1.0.min.js', './css/jquery.bxslider.css' ], 
+  	var sources = gulp.src(['./js/vendor/jquery-3.1.0.min.js', './css/style.css' ], 
   		{read: false});
 
 var sources2 = gulp.src(['./js/app.js'], 
   		{read: false});
 var sources3 = gulp.src(['./css/fontello.css'], 
   		{read: false});
-var sources4 = gulp.src(['./css/style.css'], 
-  		{read: false});
-var sources5 = gulp.src(['./js/jquery.bxslider.js'],
+var sources4 = gulp.src(['./js/jquery.bxslider.js'],
 		{read:false});
-	return target.pipe(inject(series(sources,sources2,sources3,sources4,sources5)))
+	return target.pipe(inject(series(sources,sources2,sources3,sources4,)))
 	.pipe(gulp.dest('./'));
 
 
