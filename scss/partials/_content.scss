@@ -1,13 +1,23 @@
 .row{ 
 	.wit{
 		background-color:#ffffef;
-
-		 h1 {
-		margin: 2em 0 2em 0;
+		h1 {
+		margin: 2em auto;
+		padding: 1em;
 		text-align:center;
 		color: #000000;
     	font-size: 26px;
     	text-align: center;
+    	border: 1px dotted red;
+    	width: 30%;
+//     	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
+// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(54%, rgba(209,209,209,1)), color-stop(67%, rgba(151,207,151,1)), color-stop(100%, rgba(151,207,151,1)));
+// background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
+// background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
+// background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
+// background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#97cf97', GradientType=0 );		
+		
 
          -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
       	 -moz-animation: fadein 4s; /* Firefox < 16 */
@@ -16,6 +26,7 @@
             animation: fadein 4s;
         }
     }
+
 }
 
 @keyframes fadein {
@@ -49,7 +60,7 @@
 
 h2{
 	text-align:center;
-	color: #white; 
+	margin-top: 1em;
 	// position: relative;
 	// top: 100px;
 	// left:25px;
@@ -63,7 +74,6 @@ h2{
   overflow:hidden;  
 }
 ul.images { 
-  
   list-style-type: none;
   width: 100%;
     .join{
@@ -84,14 +94,14 @@ ul.triggers{
 		margin:0 5px 12px 5px; 
 		font: 16px; 
 		cursor: pointer;
-		background-color:#0000ff;
+		background-color:#ffffff;
 		color:#000; 
 		padding:0.8em;
 		&:hover{
-		background-color:#ea3400; 
+		background-color:#808080;
 		}
 	}
-	li.active{
+	.active{
 		background-color: red; 
 		color:#000;
 	}
@@ -100,25 +110,26 @@ ul.triggers{
 	border: 1px solid;
 	color: white;
 	cursor: pointer;
-	width:5%;
-	background-color: #0000ff;
+	width:10%;
 	font-weight: bold;
 	font-size: 1em;
 	&:hover{
-		background-color: #ea3400;
+		background-color: #808080;
 	}
 }
 .prev{
 	position: relative;
 	top:20em;
+	text-align: center;
+
 }
 .next{
 	float:right;
 	position: relative;
 	top: 20em;
+	text-align: center;
 
 }
-
 
 #fast{
 	min-width: 220px;
@@ -130,7 +141,7 @@ ul.triggers{
     border-bottom: 10px solid #EA3400;
    	border-radius: 3px;
    	display: inline-block;
-   	background-color: white;
+   	background-color: rgba(255, 255, 255, 0.7);
     	.fast_title{
     		font-weight: bold;
     		color: #0000ff;
@@ -163,7 +174,6 @@ ul.triggers{
 //oferta dużo elementów!
 #oferta{
 	.row{
-
 		background: #e2e2e2;
 // background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 0%, rgba(209,209,209,1) 54%, rgba(151,207,151,1) 67%, rgba(151,207,151,1) 100%);
 // background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(0%, rgba(219,219,219,1)), color-stop(54%, rgba(209,209,209,1)), color-stop(67%, rgba(151,207,151,1)), color-stop(100%, rgba(151,207,151,1)));
@@ -179,29 +189,49 @@ ul.triggers{
 			margin-left: 6em;
 		}
 		.offer{
-			.coal{
-				margin-left: 5em;
-				display: inline;
+			margin-left: 5em;
+			.Wegiel{
+				background: url("../images/wegiel2.jpg");
+				width: 40%;
+				padding: 4em;
 				cursor: pointer;
+				float: left;
+				margin: 2em;
+				.coal{
+				display: inline;
+				color: black;
+				background-color: rgba(255,255,255,0.7);
 				&:hover{
-					color:#0000ff;
+					color:#f5f7ff;
+					}
 				}
 			}
-			.desc{
-				margin-left: 5em;
+			button{
 				display: none;
-				font-size:1.2em;
+
 			}
-			.cost{
-				font-size: 1.5em;
-				width: default;
-				display: inline;
+			.active{
+				display: block;
+				padding: 0 1em;
+				margin: 0 0 2em 1em;
 			}
-			h4{
-				margin-left: 4em;
-				margin-top: 1em;
-				font-size: 1.5em;
+		
+			.descr{
+					margin-left: 1em;
+					display: none;
+					font-size:1.2em;
+					.cost{
+					font-size: 1.2em;
+					width: default;
+					display: inline;
+				}
 			}
+		}
+		h4{
+			margin-left: 4em;
+			margin-top: 1em;
+			font-size: 1.5em;
+			clear: both;
 		}
 		.price{
 		margin-left: 6em;
@@ -224,8 +254,7 @@ ul.triggers{
 			margin: 0 1em 2em 0;
 			text-align: center;
 			font-size: 1.2em;
-			display: inlinee;
-
+			
 		}
 		.frame{
 			h3{
@@ -277,8 +306,7 @@ form{
 	}
 	.send{
 		margin-left: 2em;
-		border: 1px solid orange;
-	}
+	}	
 	button{
 		margin: 1em 0 2em 2em;
 	}

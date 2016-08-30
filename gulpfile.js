@@ -24,7 +24,7 @@ var sources3 = gulp.src(['./css/fontello.css'],
   		{read: false});
 var sources4 = gulp.src(['./js/jquery.bxslider.js'],
 		{read:false});
-	return target.pipe(inject(series(sources,sources2,sources3,sources4,)))
+	return target.pipe(inject(series(sources,sources2,sources3,sources4)))
 	.pipe(gulp.dest('./'));
 
 

@@ -29,9 +29,8 @@ footer{ //ustawienia footera
 		}
 		.fb{
 			width: 38px;
-			float: right;
+			margin: 0 auto;
 			font-size: 2em;
-			margin: 0 2em 1em 0;
 			&:hover{
 				font-size: 3em;
 			}

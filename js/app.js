@@ -14,12 +14,24 @@ $(document).ready(function() {
         fast.hide();
     });
 
-var coal = $('.coal');
-
- coal.on("click", function(){
-    $(this).next().toggle();
+var coal = $('.Wegiel'); //sprawdzić czemu to nie działa
+var butt = $('.offer button');
+var descr = $('.descr');
+var offer = $('.offer');
+console.log(butt);
+console.log(coal);
+ coal.click(function(){
+    $(this).next().show();
+    coal.hide();
+    $(this).show();
+    butt.addClass('active');
  });
-
+ butt.click(function(){
+  descr.hide();
+  butt.removeClass('active');
+  coal.show();
+ });
+ 
   var triggers = $("ul.triggers li");
   var images = $("ul.images li");
   var lastElement = images.length-1;
