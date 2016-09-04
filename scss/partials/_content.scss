@@ -84,26 +84,26 @@ ul.triggers{
 	}
 }
 .control{
-	border: 1px solid;
+	// border: 1px solid;
 	color: white;
 	cursor: pointer;
 	width:10%;
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 4em;
 	&:hover{
-		background-color: #808080;
+		color: #808080;
 	}
 }
 .prev{
 	position: relative;
-	top:20em;
+	top:6em;
 	text-align: center;
 
 }
 .next{
 	float:right;
 	position: relative;
-	top: 20em;
+	top: 6em;
 	text-align: center;
 
 }

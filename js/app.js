@@ -97,6 +97,13 @@ console.log(coal);
       clearInterval(timingRun);
    }
 });
+   $(window).resize(function(){
+   	if(window.innerWidth > 950){
+   		images.hide().first().show();
+   		clearInterval(timingRun);
+     	timingRun = setInterval(function() { sliderTiming(); },7000);
+   	}
+   })
 
    // $('.bxslider').bxSlider();
 
