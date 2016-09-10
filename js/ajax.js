@@ -2,7 +2,7 @@ function validate(){
  
  var name = $('#name').val();
  var surname = $('#surname').val();
- var mail = $('#mail').val();
+ var mail = $('#email').val();
  var subj = $('#subject').val();
  var text = $('textarea').val();
  var dataString = 'name='+ name + '&surname='+ surname + '&email='+ mail + '&subject='+ subj + '&text='+ text;

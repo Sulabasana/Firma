@@ -18,8 +18,7 @@ var coal = $('.Wegiel'); //sprawdzić czemu to nie działa
 var butt = $('.offer button');
 var descr = $('.descr');
 var offer = $('.offer');
-console.log(butt);
-console.log(coal);
+
  coal.click(function(){
     $(this).next().show();
     coal.hide();
@@ -39,7 +38,7 @@ console.log(coal);
   var next = $('.next');
   var prev = $('.prev');
 
-  console.log(triggers, images, lastElement);
+ 
   triggers.first().addClass('active');
   images.hide().first().show();
 
