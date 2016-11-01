@@ -7,14 +7,14 @@ $(document).ready(function() {
      $("body, html").animate({"scrollTop": hrefValueOffset.top
 }, 2000); 
     });
- 
+
  var fast = $("#fast");
  var cross = $(".cross");
     cross.on("click", function(){
         fast.hide();
     });
 
-var coal = $('.Wegiel'); //sprawdzić czemu to nie działa
+var coal = $('.Wegiel'); 
 var butt = $('.offer button');
 var descr = $('.descr');
 var offer = $('.offer');
@@ -38,12 +38,12 @@ var offer = $('.offer');
   var next = $('.next');
   var prev = $('.prev');
 
- 
+
   triggers.first().addClass('active');
   images.hide().first().show();
 
   function sliderResponse(target){
-     images.fadeOut(0).eq(target).fadeIn(2000);
+     images.fadeOut(0).eq(target).fadeIn(500);
     triggers.removeClass('active').eq(target).addClass('active');
     }
    
@@ -89,46 +89,78 @@ var offer = $('.offer');
       clearInterval(timingRun);
       timingRun = setInterval(function() { sliderTiming(); },7000);
     }
-   
+      function lt950(){
+      var mask = $('.mask');
+      var header = mask.find($('h2'));
+      var header2 = mask.find($('h3'));
+      if(window.innerWidth < 950){
+      images.show();
+      clearInterval(timingRun);
+      header.hide();
+      header2.addClass('visible');
+      var navig = $('.list1').find('li')
+      navig.addClass('min');
+      }
+    }
    $(window).resize(function() {
    if (window.innerWidth < 950){
       images.show();
       clearInterval(timingRun);
+      
    }
 });
    $(window).resize(function(){
    	if(window.innerWidth > 950){
-   		images.hide().first().show();
+      images.hide().first().show();
    		clearInterval(timingRun);
      	timingRun = setInterval(function() { sliderTiming(); },7000);
    	}
    })
+  
+   $(window).resize(function() {
+    var mask = $('.mask');
+    var header = mask.find($('h2'));
+    var photo = mask.find($('img'));
+    var header2 = mask.find($('h3'));
+    if (window.innerWidth < 950){
+      header.hide();
+      header2.addClass('visible'); //to trzeba chyba emberem zrobić...
+      
+   }
+   else if(window.innerWidth > 950){
+      header.show();
+      header2.removeClass('visible');
 
-   // $('.bxslider').bxSlider();
+   }
+});
+   $(window).resize(function() {
+    if (window.innerWidth < 1024){
+      var navig = $('.list1').find('li')
+      navig.addClass('min');
+    }
+    else if(window.innerWidth >1024){
+     var navig = $('.list1').find('li')
+     navig.removeClass('min');
 
-
-  // function Slider(){
-  //       var slider = $(".slider ul");
-  //       var next = $("#next");
-  //       var prev = $("#prev");
-  //       slider.eq(1).delay(5000).hide("slide", {direction:"left"}, 500);
-  //       var sc = $(".slider img").length;
-  //       var count = 2;
-  //       setInterval(function (){
-  //           slider.eq(1+count).show("slide", {direction:"right"},500);
-  //           slider.eq(1+count).delay(5500).hide("slide",{direction:"left"}, 500);
-  //               if(count == sc){
-  //                   count = 0;
-  //               }else{
-  //                   count +=1;
-  //               }
-  //           },6500);
-  //       console.log(slider.eq(1))
-  //       };
-    
-  //   Slider();
- // 
-
+   }
+  });
+   lt950();
+// function writeCookie(cookieName, cookieValue, expires, domain,
+//     path, secureFlag) {
+//     if (cookieName) {
+//         var cookieDetails = cookieName + "=" + 
+//             escape(cookieValue);
+         
+//         cookieDetails += (expires ? "; expires=" +
+//             expires.toGMTString(): '');
+ 
+//         cookieDetails += (domain ? "; domain=" + domain: '');
+//         cookieDetails += (path ? "; path=" + path: '');
+//         cookieDetails += (secureFlag ? "; secure": '');
+//         document.cookie = cookieDetails;
+//     }
+// }
+  
 
 
 }); 
